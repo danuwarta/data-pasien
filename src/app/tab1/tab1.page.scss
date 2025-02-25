@@ -1,0 +1,29 @@
+ion-content {
+  --padding-top: 16px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+}
+
+ion-card {
+  margin-bottom: 9px;
+  
+  ion-img {
+    max-height: 1000px;
+    object-fit: cover;
+  }
+}
+
+ion-card-title {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+ion-button {
+  margin-bottom: 8px;
+}
+
+.info-list {
+  ion-item {
+    --padding-start: 0;
+  }
+}

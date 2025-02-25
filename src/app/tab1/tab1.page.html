@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Selamat Datang di Sistem Data Pasien
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-img src="assets/images/logo.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Sistem Data Pasien Rumah Sakit</ion-card-title>
+      <ion-card-subtitle>Rumah Sakit Bangun Anugrah</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>
+        Selamat datang di sistem registrasi pasien Rumah Sakit . 
+        Silakan pilih menu di bawah ini untuk melanjutkan.
+      </p>
+
+      <ion-button expand="block" color="primary" routerLink="/tabs/tab2" class="ion-margin-top">
+        <ion-icon name="person-add-outline" slot="start"></ion-icon>
+        Registrasi Pasien Baru
+      </ion-button>
+
+      <ion-button expand="block" color="secondary" routerLink="/tabs/tab4" class="ion-margin-top">
+        <ion-icon name="search-outline" slot="start"></ion-icon>
+        Cek Data Para Pasien
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Informasi Layanan</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="time-outline" slot="start"></ion-icon>
+          <ion-label>
+            <h3>Jam Operasional</h3>
+            <p>Senin - Jumat: 08:00 - 20:00</p>
+            <p>Sabtu - Minggu: 09:00 - 17:00</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="call-outline" slot="start"></ion-icon>
+          <ion-label>
+            <h3>Kontak Darurat</h3>
+            <p>Telp: (021) 555-0123</p>
+            <p>Emergency: 118</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

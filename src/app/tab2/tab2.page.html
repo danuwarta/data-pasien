@@ -1,0 +1,70 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Registrasi Data Pasien</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> 
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Registrasi Data Pasien</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Silakan lengkapi data registrasi pasien di bawah ini</p>
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating"> Nama lengkap </ion-label>
+          <ion-input type="text" [(ngModel)]="nama"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating"> NIK</ion-label>
+          <ion-input type="number" [(ngModel)]="nik"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating"> Alamat </ion-label>
+          <ion-input type="text" [(ngModel)]="alamat"></ion-input>  
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating"> No. HP </ion-label>
+          <ion-input type="number" [(ngModel)]="noHp"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Dokter Yang Bertugas</ion-label>
+          <ion-select [(ngModel)]="dokteryangbertugas" interface="popover" placeholder="Pilih dokter">
+            <ion-select-option value="Dr. Ahmad Sulaiman">Dr. Ahmad Sulaiman</ion-select-option>
+            <ion-select-option value="Dr. Sarah Wijaya">Dr. Sarah Wijaya</ion-select-option>
+            <ion-select-option value="Dr. Budi Santoso">Dr. Budi Santoso</ion-select-option>
+            <ion-select-option value="Dr. Ratna Dewi">Dr. Ratna Dewi</ion-select-option>
+            <ion-select-option value="Dr. Joko Widodo">Dr. Joko Widodo</ion-select-option>
+          </ion-select>
+        </ion-item>
+       
+        <ion-item>
+          <ion-label position="floating"> Jenis Layanan </ion-label>
+          <ion-select [(ngModel)]="jenislayanan" class="popover-content" placeholder="jenis layanan">
+            <ion-select-option value="Kunjungan Pertama">Kunjungan Pertama</ion-select-option>
+            <ion-select-option value="Pemeriksaan Lanjutan">Pemeriksaan Lanjutan</ion-select-option>
+            <ion-select-option value="Rawat Inap">Rawat Inap</ion-select-option>
+            <ion-select-option value="Rawat Jalan">Rawat Jalan</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating"> Ruang Rawat </ion-label>
+          <ion-input type="text" [(ngModel)]="ruangRawat"></ion-input>
+        </ion-item>
+
+      </ion-list>
+
+      <div class="ion-padding">
+        <ion-button expand="block" (click)="addRegister()">
+          <ion-icon name="add-circle-outline"></ion-icon>
+          Daftar Sekarang
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
